@@ -1,28 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>To-do List</title>
-    <link rel="stylesheet" href="style.css">
-   </head>
-  <body>
-     <div id="myDIV" class="header">
-      <h2>To Do List</h2>
-      <input type="text" id="myInput" placeholder="Add your task here..">
-      <span onclick="newElement()" class="addBtn">Add</span>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stylish To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>📝 My To-Do List</h2>
+      <div class="input-group">
+        <input type="text" id="myInput" placeholder="Add your task here...">
+        <button onclick="newElement()" class="addBtn">Add</button>
+      </div>
     </div>
-    
+
     <ul id="myUL">
-      <li>Meet Rahul</li>
-      <li >Pay Rent</li>
-      <li>Go to laundry</li>
-      <li>Buy Grocery</li>
-      <li>Read a book</li>
-    
+      <!-- Tasks will be added here -->
     </ul>
-  
-    
-    </body>
-    <script src="script.js"></script>
+
+    <div class="footer">
+      <p>✅ Click on a task to mark it as done. 🗑️ Double-click to delete.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
